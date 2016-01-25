@@ -1,0 +1,53 @@
+/* Intializing basic colors */
+
+@darkGrey: rgb(30, 30, 30);
+@lightGrey: rgb(70, 70, 70);
+@lightBlue: rgb(50, 170, 220);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#player {
+  background-color: @darkGrey;
+  display: inline-block;
+
+  img {
+    background-color: @lightGrey;
+  }
+}
+
+#video-container {
+  border: 1px solid black;
+  height: 360px;
+  width: 640px;
+
+  video {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+#pbar-container {
+  background-color: lightGrey;
+  margin-top: 2px;
+  //padding-bottom: 1px;
+
+  #pbar {
+    height: 5px;
+    background-color: @lightBlue;
+    width: 40%;
+  }
+}
+
+#buttons-container {
+  height: 50px;
+
+  * {
+    display: inline-block;
+    height: 100%;
+    outline: 1px solid red;
+    vertical-align: middle;
+  }
+}

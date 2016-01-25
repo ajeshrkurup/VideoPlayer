@@ -1,0 +1,35 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>HTML5 Video Player</title>
+      <link rel="stylesheet" href="CSS/style.css">
+      <script src="JS/script.js"></script>
+    </head>
+
+    <body>
+      <div id="player">
+        <div id="video-container">
+          <video poster="Images/thumbnail.png">
+            <source src="Media/sample.mp4">
+            It looks like your browser doesn't support the HTML5 video tag.
+          </video>
+        </div> <!-- video-container -->
+        <div id="pbar-container">
+          <div id="pbar"></div>
+        </div>
+        <div id="buttons-container">
+          <img src="Images/play.png" id="play-button">
+          <div id="time-field">
+            0:00/0:00
+          </div>
+          <img src="Images/sound.png" id="sound-button">
+          <div id="sbar-container">
+            <div id="sbar"></div>
+            <img src="Images/fullscreen.png" id="fullscreen-button">
+          </div>
+
+        </div><!-- buttons-container -->
+
+      </div><!-- player-->
+    </body>
+  </html>
